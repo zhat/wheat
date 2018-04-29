@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9$b*+#@l_mjtckib-6zyyf)kdhvyk+x-_va6yyo29616ts7rp('
+SECRET_KEY = 's0_)fv**i)c+$23f9-t9wip%*hr4-uofs&%)(j+bx5n8($z-)p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.yxz91.com','39.108.209.141']
 
 
 # Application definition
@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'share',
-	'django_celery_results',
-	'django_celery_beat',
+    'django_celery_beat',
+    'django_celery_results',
+    'share',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +124,4 @@ STATIC_URL = '/static/'
 
 CELERY_RESULT_BACKEND = 'django-db'
 
+STATIC_ROOT = os.path.join(BASE_DIR,'static')

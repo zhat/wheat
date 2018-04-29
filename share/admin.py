@@ -10,3 +10,4 @@ class BaseInfoAdmin(admin.ModelAdmin):
 			 'circulation_market_value','pe_ratio','create_time','update_time')
 
 admin.site.register(BaseInfo,BaseInfoAdmin)
+
