@@ -1,16 +1,9 @@
-<<<<<<< HEAD
 from __future__ import absolute_import
-=======
->>>>>>> b5b906d1a8704941c008928e7f7f528a0d7d45fb
 import os
 from celery import Celery
 
 # set the default Django settings module for the 'celery' program.
-<<<<<<< HEAD
-os.environ.setdefault('DJANGO_SETTINGS_MODULE','wheat.settings')
-=======
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'wheat.settings')
->>>>>>> b5b906d1a8704941c008928e7f7f528a0d7d45fb
 
 app = Celery('wheat')
 
